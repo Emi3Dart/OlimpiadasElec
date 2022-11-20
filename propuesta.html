@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TécN°5</title>
+    <meta name="description" content="Pagina web de las Olimpiadas">
+     <!-- PRELOAD-->
+     <link rel="preload" href="./CSS/style.css">
+     <link rel="stylesheet" href="./CSS/style.css">
+ 
+     <link rel="preload" href="./CSS/normalize.css">
+     <link rel="stylesheet" href="./CSS/normalize.css">
+ 
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+     crossorigin="crossorigin" as="font">
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+    
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a href="./index.html" class="logo">
+                    <h1 class="logo__nombre centrar-texto no-margin">Téc<span class="logo__bold">N°5</span></h1>
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="no-margin">Página del Colegio Técnica 5</h2>
+            <p class="no-margin">Todo lo que hicimos para la olimpiada</p>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <h3 class="centrar-texto ">PROPUESTA DE ACTUALIZACION</h3>
+        <div class="nosotros">
+            <p>
+                Luego de analizar el funcionamiento del circuito integrado 4047, 
+                descubrimos que es un componente completo dedicado a tal fin. No existe un 
+                reemplazo directo, moderno de similares características. Se propone un circuito 
+                de reemplazo a fin de armar las etapas que componen el 4047 manteniendo 
+                gran parte del circuito original. Además el nuevo circuito presenta ajustes que 
+                mejoran la calidad del inversor. 
+            </p>
+            <p>
+                Se realiza un oscilador astable con un circuito integrado 556 y un CD4013 dual 
+                Flip-Flop. 
+            </p>
+            <h4> El circuito propuesto es el siguiente:</h4>
+                <div class="nosotros__imagen">
+                    <img src="./img/esqPropu.jpg" alt="imagen esquematico">
+                </div>
+                <div class="nosotros__texto">
+                    <p>
+                        El circuito presentado puede generar una señal cuadrada al 50% o 
+                        controlar el ancho del pulso para obtener mejoras en la señal de salida, como 
+                        la eliminación de armónicos que distorsionan la señal de salida.
+                    </p>
+                    
+                    <p>
+                        También se reemplazan los transistores BD239 y 2N3772 por 
+                        transistores más comunes en el mercado. Según las características de cada 
+                        uno. 
+                    </p>
+                </div>
+                <div class="nosotros__imagen">
+                    <img src="./img/tabla.jpg" alt="imagen esquematico">
+                </div>
+            <h4>Simulación</h4>
+            <div class="nosotros__imagen">
+                <p>
+                    El Circuito armado en Proteus: 
+                </p>
+                <img src="./img/simuPro.jpg" alt="imagen esquematico">
+            </div>
+
+            <div class="nosotros__texto">
+                <p>
+                    Se mantiene el circuito anterior en la mayoría de los componentes
+                </p>
+            <div>
+                <div class="nosotros__imagen">
+                    <img src="./img/simuPro2.jpg" alt="imagen esquematico">
+                </div>
+                
+                <p>
+                    Se observan las señales a las salidas Q de los módulos del CI 556 y las 
+                    señales en los capacitores de cada uno. 
+
+                </p>
+
+                <div class="nosotros__imagen">
+                    <img src="./img/osci3.jpg" alt="imagen esquematico">
+                </div>
+                <p>
+                    Luego la señales a las salidas de los módulos del CI 4013 y la señal a la 
+                    salida del transformador. Podemos Observar la composición de una señal 
+                    cuadrada de 50Hz.
+
+                </p>
+
+                <div class="nosotros__imagen">
+                    <img src="./img/osci4.jpg" alt="imagen esquematico">
+                </div>
+                <p>
+                    Como se mencionó anteriormente con este nuevo circuito se puede 
+                    modificar el ciclo de actividad de la señal cuadra, logrando un pulso único de 
+                    60° con lo cual podemos eliminar los armónicos más fuertes como los terceros. 
+                </p>
+
+                <div class="nosotros__imagen">
+                    <img src="./img/controlAmpli.jpg" alt="imagen esquematico">
+                </div>
+                <div class="nosotros__imagen">
+                    <img src="./img/modusal.jpg" alt="imagen esquematico">
+                </div>
+                <div class="nosotros__imagen">
+                    <img src="./img/armonico.jpg" alt="imagen esquematico">
+                </div>
+                
+                <p>
+                    Se observan las señales a las salidas Q de los módulos del CI 556 y las 
+                    señales en los capacitores de cada uno. 
+                </p>
+
+                <div class="nosotros__imagen">
+                    <img src="./img/osci5.jpg" alt="imagen esquematico">
+                </div>
+
+                <p>
+                    Luego la señales a las salidas de los módulos del CI 4013 y la señal a la 
+                    salida del transformador. Podemos Observar la composición de una señal 
+                    cuadrada de 50Hz de pulso único con B=60°. 
+                </p>
+
+                <div class="nosotros__imagen">
+                    <img src="./img/osci5.jpg" alt="imagen esquematico">
+                </div>
+            
+            </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="footer no-margin">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="./index.html" class="logo">
+                    <h1 class="logo__nombre centrar-texto no-margin">Téc<span class="logo__bold">N°5</span></h1>
+                </a>
+            
+            </div>
+        </div>
+
+    </footer>
+    
+
+    <script src="./js/modernizr.js "></script>
+</body>
+</html>
