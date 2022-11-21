@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TécN°5</title>
+    <meta name="description" content="Pagina web de las Olimpiadas">
+     <!-- PRELOAD-->
+     <link rel="preload" href="./CSS/style.css">
+     <link rel="stylesheet" href="./CSS/style.css">
+ 
+     <link rel="preload" href="./CSS/normalize.css">
+     <link rel="stylesheet" href="./CSS/normalize.css">
+ 
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+     crossorigin="crossorigin" as="font">
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+    
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a href="./index.html" class="logo">
+                    <h1 class="logo__nombre centrar-texto no-margin">Téc<span class="logo__bold">N°5</span></h1>
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="no-margin">Olimpiadas de Electrónica 2022</h2>
+            <p class="no-margin">colegio E.E.S.T. N°5 "2 de abril" de temperley</p>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <h3 class="centrar-texto ">PROPUESTA SUPERADORA</h3>
+        <div class="nosotros">
+            <h4> CUADRO COMPARATIVO</h4>
+                <div class="nosotros__imagen">
+                    <img src="./img/tabla2.jpg" alt="imagen esquematico">
+                </div>
+
+            <h4>PROPUESTA SUPERADORA</h4>
+            <div class="nosotros__texto">
+                <p>
+                    Se propone un circuito elevador de tensión utilizando conmutación de 
+                    alta frecuencia, de esta forma se elimina el transformador de hierro, que es uno 
+                    de los componentes que más perdidas aporta, a cambio se utiliza un 
+                    transformador de núcleo de ferrita. La etapa de salida utiliza un circuito puente 
+                    H de pulso único para la generación de la onda de 50Hz. 
+                </p>
+                <p>
+                    Para realizar la fuente switching elevadora de tensión se utilizara el 
+                    circuito integrado SG3525. 
+                </p>
+            </div>
+            <div class="nosotros__imagen">
+                <img src="./img/blockdiagram.jpg" alt="imagen esquematico">
+                <img src="./img/esquematico4.jpg" alt="imagen esquematico">
+            </div>
+            <div class="nosotros__texto">
+                <p>
+                    La segunda etapa es generar la señal de pulso único para obtener la 
+                    cuasi senoidal. Para este proceso se utiliza un microcontrolador, drivers de 
+                    puente H y transistores MosFet. 
+                </p>
+                <p>
+                    Se utiliza el Circuito integrado ir2110 como drivers para puente H:  
+                </p>
+            </div>
+            <div class="nosotros__imagen">
+                <img src="./img/connection.jpg" alt="imagen esquematico">
+            </div>
+            <div class="nosotros__texto">
+                <p>
+                    La simulación se realiza en Proteus con un Arduino UNO. 
+                </p>
+            </div>
+            <div class="nosotros__imagen">
+                <img src="./img/edit4.jpg" alt="imagen esquematico">
+            </div>
+            <div class="nosotros__texto">
+                <p>
+                    Se observan las salidas del microcontrolador: 
+                </p>
+                <p>
+                    Los archivos de proteus se pueden obtener en el repositorio de GitHub. 
+                </p>
+                <a href="https://github.com/olimpiadaelectec5/Olimpiadas" class="boton boton--secundario">Repositorio del GitHub</a>
+            </div>
+            <div class="nosotros__imagen">
+                <img src="./img/osc7.jpg" alt="imagen esquematico">
+            </div>
+            <div class="nosotros__texto">
+                <p>
+                    La siguiente simulación es a la salida del puente H antes del filtro:
+                </p>
+            </div>
+            <div class="nosotros__imagen">
+                <img src="./img/osc8.jpg" alt="imagen esquematico">
+            </div>
+            <div class="nosotros__texto">
+                <p>
+                    La siguiente imagen muestra la señal de salida resultante del proceso: 
+                </p>
+            </div>
+            <div class="nosotros__imagen">
+                <img src="./img/osc9.jpg" alt="imagen esquematico">
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="footer no-margin">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="./index.html" class="logo">
+                    <h1 class="logo__nombre centrar-texto no-margin">Téc<span class="logo__bold">N°5</span></h1>
+                </a>
+            
+            </div>
+        </div>
+
+    </footer>
+    
+
+    <script src="./js/modernizr.js "></script>
+</body>
+</html>

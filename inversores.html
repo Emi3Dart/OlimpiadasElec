@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TécN°5</title>
+    <meta name="description" content="Pagina web de las Olimpiadas">
+     <!-- PRELOAD-->
+     <link rel="preload" href="./CSS/style.css">
+     <link rel="stylesheet" href="./CSS/style.css">
+ 
+     <link rel="preload" href="./CSS/normalize.css">
+     <link rel="stylesheet" href="./CSS/normalize.css">
+ 
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+     crossorigin="crossorigin" as="font">
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+    
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a href="./index.html" class="logo">
+                    <h1 class="logo__nombre centrar-texto no-margin">Téc<span class="logo__bold">N°5</span></h1>
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="no-margin">Olimpiadas de Electrónica 2022</h2>
+            <p class="no-margin">colegio E.E.S.T. N°5 "2 de abril" de temperley</p>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <h3 class="centrar-texto ">DESCRIPCION GENERAL DE LOS INVERSORES</h3>
+        <div class="nosotros">
+
+
+            <h4> Inversores de onda cuadrada:</h4>
+                <div class="nosotros__texto">
+                    <p>
+                        La mayoría de los inversores funcionan 
+                        haciendo pasar la corriente continua a través de un transformador, primero en 
+                        una dirección y luego en otra. El dispositivo de conmutación que cambia la 
+                        dirección de la corriente debe actuar con rapidez. A medida que la corriente 
+                        pasa a través de la cara primaria del transformador, la polaridad cambia 100 
+                        veces cada segundo. Como consecuencia, la corriente que sale del secundario 
+                        del transformador va alternándose, en una frecuencia de 50 ciclos completos 
+                        por segundo. La dirección del flujo de corriente a través de la cara primaria del 
+                        transformador se cambia muy bruscamente, de manera que la forma de onda 
+                        del secundario es "cuadrada". 
+                    </p>
+                    <p>
+                        Los inversores de onda cuadrada son más baratos, pero normalmente 
+                        son también los menos eficientes. Producen armónicos que generan 
+                        interferencias (ruidos). No son aptos para motores de inducción. Si se desea 
+                        corriente alterna únicamente para alimentar un televisor, una notebook, se 
+                        puede utilizar este tipo de inversor. 
+                    </p>
+                </div>
+
+
+            <h4>Inversores de onda senoidal modificada:</h4>
+                <div class="nosotros__texto">
+                    <p>
+                        Son más sofisticados y 
+                        caros, y utilizan técnicas de modulación de ancho de impulso. El ancho de la 
+                        onda es modificado para acercarla lo más posible a una onda senoidal. La 
+                        salida no es todavía una auténtica onda senoidal, pero está bastante próxima. 
+                        El contenido de armónicos es menor que en la onda cuadrada. Son los que 
+                        mejor relación calidad/precio ofrecen para la conexión de iluminación, televisión 
+                        o variadores de frecuencia. 
+                    </p>
+
+                </div>
+
+            <h4>Inversores de onda senoidal:</h4>
+                <div class="nosotros__texto">
+                    <p>
+                        Con una electrónica más elaborada se 
+                        puede conseguir una onda senoidal pura. Últimamente se han desarrollado 
+                        nuevos inversores senoidales con una eficiencia del 90% o más. La 
+                        incorporación de microprocesadores de última generación permite aumentar las 
+                        prestaciones. Sin embargo, su costo es mayor que el de los inversores menos 
+                        sofisticados.
+                    </p>
+                    
+                </div>
+
+
+            
+                <div class="nosotros__imagen">
+                    <img src="./img/inversores.jpg" alt="imagen esquematico">
+                </div>
+        </div>
+
+
+    </main>
+
+    <footer class="footer no-margin">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="./index.html" class="logo">
+                    <h1 class="logo__nombre centrar-texto no-margin">Téc<span class="logo__bold">N°5</span></h1>
+                </a>
+            
+            </div>
+        </div>
+
+    </footer>
+    
+
+    <script src="./js/modernizr.js "></script>
+</body>
+</html>

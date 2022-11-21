@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TécN°5</title>
+    <meta name="description" content="Pagina web de las Olimpiadas">
+     <!-- PRELOAD-->
+     <link rel="preload" href="./CSS/style.css">
+     <link rel="stylesheet" href="./CSS/style.css">
+ 
+     <link rel="preload" href="./CSS/normalize.css">
+     <link rel="stylesheet" href="./CSS/normalize.css">
+ 
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+     crossorigin="crossorigin" as="font">
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+    
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a href="./index.html" class="logo">
+                    <h1 class="logo__nombre centrar-texto no-margin">Téc<span class="logo__bold">N°5</span></h1>
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="no-margin">Olimpiadas de Electrónica 2022</h2>
+            <p class="no-margin">colegio E.E.S.T. N°5 "2 de abril" de temperley</p>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <h3 class="centrar-texto ">DESCRIPCIÓN</h3>
+        <div class="nosotros">
+            <h4> Explicación del circuito:</h4>
+                <div class="nosotros__imagen">
+                    <img src="./img/curso1.jpg" alt="imagen esquematico">
+                </div>
+                <div class="nosotros__texto">
+                    <p>
+                        El funcionamiento básico del circuito se describe a continuación:</p>
+                        <p>
+El circuito integrado 4047 es un multivibrador, que en este caso funciona 
+como astable. Genera una señal cuadrada de 100Hz. La ecuación para el 
+cálculo de la frecuencia es TA = 2,2 x R x C. donde C es un capacitor de 100nF 
+y R es una resistencia de 22KOhm en serie con una resistencia variable de 
+50KOhm.</p>
+
+<p>La salida Q y Q negado son complementarias y controla una cascada de 
+transistores desde baja potencia hasta la potencia necesaria para excitar el 
+transformador. </p>
+<p>El transformador es un elevador de tensión de doble bobinado primario y 
+secundario simple. La relación de transformación es N = 220V/9V = 24,44. 
+El circuito se alimenta desde baterías de 12Volt. Para filtrar y estabilizar 
+se utiliza un regulador de tensión con diodo Zener. </p>
+<p>El diodo de 5A colocado en paralelo con la línea de alimentación genera 
+un cortocircuito cuando la polaridad es invertida, haciendo que el fusible se 
+actúe. </p>
+<p>Los transistores de salida deben ser colocados sobre disipador de calor. 
+Los cables de la conexión de la batería son de diámetro considerable.
+                    </p>
+                </div>
+
+            <h4>Simulación</h4>
+            <div class="nosotros__imagen">
+                <p>
+                    Se realiza la simulación del circuito original para comprobar el funcionamiento.
+                </p>
+                <img src="./img/blog1.jpg" alt="imagen esquematico">
+            </div>
+            <div class="nosotros__texto">
+                <p>
+                    Señales en el circuito integrado 4047:
+                </p>
+                
+            <div>
+                <div class="nosotros__imagen">
+                    <img src="./img/osci.jpg" alt="imagen esquematico">
+                </div>
+                
+                <p>
+                    Señal a la salida. En el secundario del transformador:
+                </p>
+
+                <div class="nosotros__imagen">
+                    <img src="./img/osci2.jpg" alt="imagen esquematico">
+                </div>
+            
+            </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="footer no-margin">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="./index.html" class="logo">
+                    <h1 class="logo__nombre centrar-texto no-margin">Téc<span class="logo__bold">N°5</span></h1>
+                </a>
+            
+            </div>
+        </div>
+
+    </footer>
+    
+
+    <script src="./js/modernizr.js "></script>
+</body>
+</html>

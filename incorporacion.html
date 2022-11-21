@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TécN°5</title>
+    <meta name="description" content="Pagina web de las Olimpiadas">
+     <!-- PRELOAD-->
+     <link rel="preload" href="./CSS/style.css">
+     <link rel="stylesheet" href="./CSS/style.css">
+ 
+     <link rel="preload" href="./CSS/normalize.css">
+     <link rel="stylesheet" href="./CSS/normalize.css">
+ 
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+     crossorigin="crossorigin" as="font">
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+    
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a href="./index.html" class="logo">
+                    <h1 class="logo__nombre centrar-texto no-margin">Téc<span class="logo__bold">N°5</span></h1>
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="no-margin">Olimpiadas de Electrónica 2022</h2>
+            <p class="no-margin">colegio E.E.S.T. N°5 "2 de abril" de temperley</p>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <h3 class="centrar-texto ">NUEVAS INCORPORACIONES</h3>
+        <div class="nosotros">
+            <p>
+                Se diseñan nuevas incorporaciones al circuito. Se realizan las simulaciones en MicroCap. 
+                Detector de falla en el transformador. Se realiza un circuito rectificador, y un optoacoplador 
+                que se activa solo si hay tensión a la salida del transformador. La salida del Amplificador 
+                Operacional va al tablero de LEDs.
+            </p>
+            <h4> Nuevos circuitos:</h4>
+                <div class="nosotros__imagen">
+                    <img src="./img/edit.jpg" alt="imagen esquematico">
+                </div>
+                <div class="nosotros__texto">
+                    <p>
+                        Se realiza la simulación en Software MicroCap. Se observan los pulsos de salida para encender 
+                        el Led.
+                    </p>
+                    <div class="nosotros__imagen">
+                        <img src="./img/simu1.jpg" alt="imagen esquematico">
+                    </div>
+                        <p>
+                            El siguiente circuito es un detector de falla en el circuito integrado. Es un filtro pasa 
+                            altos que deja pasar las frecuencias mayores a 100Hz, luego un rectificador y un amplificador. 
+                            La idea básica de este circuito es detectar que hay señal de salida en el oscilador. 
+                        </p>
+                    <div class="nosotros__imagen">
+                        <img src="./img/edit2.jpg" alt="imagen esquematico">
+                    </div>
+
+                    <p>
+                        Simulación con señal de salida:
+                    </p>
+
+                    <div class="nosotros__imagen">
+                        <img src="./img/simu2.jpg" alt="imagen esquematico">
+                    </div>
+
+                    <p>
+                        Simulación sin señal de salida: 
+                    </p>
+
+                    <div class="nosotros__imagen">
+                        <img src="./img/simu3.jpg" alt="imagen esquematico">
+                    </div>
+
+                    <p>
+                        Se diseña un circuito con buzzer para la falla general y un detector de fusible abierto. 
+                        Esquemáticos de Kicad. 
+                     </p>
+
+                     <div class="nosotros__imagen">
+                        <img src="./img/esqKicad2.jpg" alt="imagen esquematico">
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="footer no-margin">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="./index.html" class="logo">
+                    <h1 class="logo__nombre centrar-texto no-margin">Téc<span class="logo__bold">N°5</span></h1>
+                </a>
+            
+            </div>
+        </div>
+
+    </footer>
+    
+
+    <script src="./js/modernizr.js "></script>
+</body>
+</html>
